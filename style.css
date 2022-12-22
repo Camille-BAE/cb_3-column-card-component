@@ -1,0 +1,133 @@
+* {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray: hsl(0, 0%, 95%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body span {
+  background: var(--Very-light-gray);
+}
+
+body {
+  font-size: 15px;
+}
+
+h1 {
+  color: var(--Very-light-gray);
+  font-family: 'Big Shoulders Display', cursive;
+  margin-bottom: 40px;
+}
+
+p {
+  color: var(--Transparent-white);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  width: min(1440px, 90%);
+  margin: 30px;
+  justify-content: center;
+}
+
+.box .card {
+  min-height: 450px;
+  width: 300px;
+  padding: 0 50px;
+}
+
+.box img {
+  margin: 50px 0 40px 0;
+}
+
+.box .sedans {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.box .suvs {
+  background-color: var(--Dark-cyan);
+}
+
+.box .luxury {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.box button {
+  border: none;
+  border-radius: 50px;
+  min-height: 40px;
+  width: 150px;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.box button:hover {
+  border: 3px solid var(--Very-light-gray);
+}
+
+.box .sed {
+  color: var(--Bright-orange);
+}
+
+.box .suv {
+  color: var(--Dark-cyan);
+}
+
+.box .lux {
+  color: var(--Very-dark-cyan);
+}
+
+.box .sed:hover {
+  background-color: var(--Bright-orange);
+  color: var(--Very-light-gray);
+}
+
+.box .suv:hover {
+  background-color: var(--Dark-cyan);
+  color: var(--Very-light-gray);
+}
+
+.box .lux:hover {
+  background-color: var(--Very-dark-cyan);
+  color: var(--Very-light-gray);
+}
+
+.attribution {
+  margin: 30px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 400px) {
+  .box {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .box .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .box .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
